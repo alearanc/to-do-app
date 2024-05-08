@@ -11,12 +11,9 @@ function addTask() {
 function createTask(taskText) {
     let $pendingTasks = document.getElementById('pending-tasks')
     let $li = document.createElement('li')
-
     $li.appendChild(document.createTextNode(taskText))
-
     createDoneOption($li)
     createDeleteOption($li)
-    
     $pendingTasks.appendChild($li)
 }
 function createButton(text, action) {
