@@ -40,7 +40,6 @@ function createUndoOption($li) {
         undoneTask($li)
     }))
 }
-
 function doneTask($li) {
     let $doneTasks = document.getElementById('done-tasks')
     let $buttons = $li.querySelectorAll("button")
